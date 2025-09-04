@@ -14,6 +14,8 @@ for (let i = 0; i < cardHearts.length; i++) {
   });
 }
 
+const CallHistoryData = [];
+
 // call feature
 //number1
 document.getElementById("call-btn").addEventListener("click", function () {
@@ -34,6 +36,31 @@ document.getElementById("call-btn").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+
+  const data = {
+    name: "National Emergency Number",
+    number: "999",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number2
 document.getElementById("call-btn2").addEventListener("click", function () {
@@ -54,6 +81,31 @@ document.getElementById("call-btn2").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+
+  const data = {
+    name: "Police Helpline Number",
+    number: "999",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number3
 document.getElementById("call-btn3").addEventListener("click", function () {
@@ -74,6 +126,30 @@ document.getElementById("call-btn3").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Fire Service",
+    number: "999",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number4
 document.getElementById("call-btn4").addEventListener("click", function () {
@@ -94,6 +170,30 @@ document.getElementById("call-btn4").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Ambulance Service",
+    number: "1994-999999",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number5
 document.getElementById("call-btn5").addEventListener("click", function () {
@@ -114,6 +214,30 @@ document.getElementById("call-btn5").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Women & Child Helpline",
+    number: "109",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number6
 document.getElementById("call-btn6").addEventListener("click", function () {
@@ -134,6 +258,30 @@ document.getElementById("call-btn6").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Anti-Corruption Helpline",
+    number: "106",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number7
 document.getElementById("call-btn7").addEventListener("click", function () {
@@ -154,6 +302,30 @@ document.getElementById("call-btn7").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Electricity Helpline",
+    number: "16216",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number8
 document.getElementById("call-btn8").addEventListener("click", function () {
@@ -174,6 +346,30 @@ document.getElementById("call-btn8").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Brac Helpline",
+    number: "16445",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
 });
 //number9
 document.getElementById("call-btn9").addEventListener("click", function () {
@@ -184,7 +380,7 @@ document.getElementById("call-btn9").addEventListener("click", function () {
     alert("insufficient balance");
     return;
   }
-  alert(`Bangladesh Railway Helpline at 163`);
+  alert(`Calling Bangladesh Railway Helpline at 163`);
 
   const availableBalance = parseInt(
     document.getElementById("available-balance").innerText
@@ -194,4 +390,37 @@ document.getElementById("call-btn9").addEventListener("click", function () {
 
   document.getElementById("available-balance").innerText =
     totalNewAvailableBalance;
+  const data = {
+    name: "Bangladesh Railway",
+    number: "163",
+    date: new Date().toLocaleTimeString(),
+  };
+  CallHistoryData.push(data);
+
+  const HistoryContainer = document.getElementById("History-container");
+  HistoryContainer.innerText = "";
+  for (const data of CallHistoryData) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+     <div class="flex gap-5 bg-gray-100 rounded-md p-2 mt-3">
+              <div>
+                <h1 class="hind-madurai-semibold md:text-[18px]">
+                  ${data.name}
+                </h1>
+                <p>${data.number}</p>
+              </div>
+              <div><p>${data.date}</p></div>
+            </div>`;
+
+    HistoryContainer.appendChild(div);
+  }
+});
+
+//clear button
+let callHistory = [];
+const history = document.getElementById("History-container");
+const ClearBtn = document.getElementById("clear-btn");
+ClearBtn.addEventListener("click", function () {
+  history.innerHTML = "";
+  callHistory = [];
 });
