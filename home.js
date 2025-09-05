@@ -416,11 +416,68 @@ document.getElementById("call-btn9").addEventListener("click", function () {
   }
 });
 
-//clear button
-let callHistory = [];
+//clear button;
+let historyData = [];
 const history = document.getElementById("History-container");
 const ClearBtn = document.getElementById("clear-btn");
 ClearBtn.addEventListener("click", function () {
-  history.innerHTML = "";
-  callHistory = [];
+  history.innerHTML = " ";
+  historyData = [];
 });
+//copy feature
+
+const navbarCopyCount = document.querySelector("#navbar-copy");
+
+let count1 = 0;
+
+const cardCopy = document.querySelectorAll(".copy-btn");
+
+for (let i = 0; i < cardCopy.length; i++) {
+  cardCopy[i].addEventListener("click", () => {
+    count1++;
+    navbarCopyCount.textContent = count1;
+  });
+}
+
+function copyText() {
+  let text = document.getElementById("cardText").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText4() {
+  let text = document.getElementById("cardText4").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText5() {
+  let text = document.getElementById("cardText5").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText6() {
+  let text = document.getElementById("cardText6").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText7() {
+  let text = document.getElementById("cardText7").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText8() {
+  let text = document.getElementById("cardText8").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}
+function copyText9() {
+  let text = document.getElementById("cardText9").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied: " + text);
+  });
+}

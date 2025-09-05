@@ -51,7 +51,7 @@
           <div
             class="flex items-center bg-[#00A63E] px-5 py-1 rounded-full text-white"
           >
-            <span class="mr-1">0</span>copy
+            <span id="navbar-copy" class="mr-1">0</span>copy
           </div>
         </div>
       </div>
@@ -76,20 +76,22 @@
       <div class="flex justify-between md:justify-around">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-x-3 gap-y-4 mt-8">
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
                 class="h-9 w-9 bg-[#FFE3E2] p-2 rounded-md"
               />
-              <i class="fa-regular fa-heart mr-200 sm:mr-5 md:mr-5"></i>
+              <i class="fa-regular fa-heart"></i>
             </div>
             <div>
               <h1 class="hind-madurai-bold text-[20px]">
                 National Emergency Number
               </h1>
               <p class="text-[18px]">National Emergency</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">999</p>
+              <p id="cardText" class="mt-5 hind-madurai-bold text-[32px]">
+                999
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -99,7 +101,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md md:text-[16px]">
+              <button
+                onclick="copyText()"
+                class="copy-btn border px-10 mt-4 rounded-md md:text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -110,7 +115,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/police.png"
                 alt=""
@@ -133,7 +138,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -144,7 +152,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/fire-service.png"
                 alt=""
@@ -165,7 +173,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -176,7 +187,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/ambulance.png"
                 alt=""
@@ -187,7 +198,9 @@
             <div>
               <h1 class="hind-madurai-bold text-[20px]">Ambulance Service</h1>
               <p class="text-[18px]">Ambulance</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">1994-999999</p>
+              <p id="cardText4" class="mt-5 hind-madurai-bold text-[32px]">
+                1994-999999
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -197,7 +210,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText4()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -208,7 +224,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
@@ -221,7 +237,9 @@
                 Women & Child Helpline
               </h1>
               <p class="text-[18px]">Women & Child Helpline</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">109</p>
+              <p id="cardText5" class="mt-5 hind-madurai-bold text-[32px]">
+                109
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -231,7 +249,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText5()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -242,7 +263,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
@@ -255,7 +276,9 @@
                 Anti-Corruption Helpline
               </h1>
               <p class="text-[18px]">Anti-Corruption</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">106</p>
+              <p id="cardText6" class="mt-5 hind-madurai-bold text-[32px]">
+                106
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -265,7 +288,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText6()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -276,7 +302,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
@@ -289,7 +315,9 @@
                 Electricity Helpline
               </h1>
               <p class="text-[18px]">NElectricity Outage</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">16216</p>
+              <p id="cardText7" class="mt-5 hind-madurai-bold text-[32px]">
+                16216
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -299,7 +327,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText7()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -310,7 +341,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
@@ -321,7 +352,9 @@
             <div>
               <h1 class="hind-madurai-bold text-[20px]">Brac Helpline</h1>
               <p class="text-[18px]">Brac</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">16445</p>
+              <p id="cardText8" class="mt-5 hind-madurai-bold text-[32px]">
+                16445
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -331,7 +364,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText8()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
@@ -342,7 +378,7 @@
             </div>
           </section>
           <section class="w- shadow-md bg-white p-4 rounded-md">
-            <div class="flex gap-30 items-center justify-between">
+            <div class="flex md:gap-30 items-center justify-between">
               <img
                 src="./assets/emergency.png"
                 alt=""
@@ -355,7 +391,9 @@
                 Bangladesh Railway Helpline
               </h1>
               <p class="text-[18px]">Bangladesh Railway</p>
-              <p class="mt-5 hind-madurai-bold text-[32px]">163</p>
+              <p id="cardText9" class="mt-5 hind-madurai-bold text-[32px]">
+                163
+              </p>
               <p
                 class="hind-madurai-regular text-[18px] bg-[#F2F2F2] w-max rounded-full px-3"
               >
@@ -365,7 +403,10 @@
             <div
               class="flex flex-col md:flex md:flex-row md:justify-between mb-5"
             >
-              <button class="border px-10 mt-4 rounded-md text-[16px]">
+              <button
+                onclick="copyText9()"
+                class="copy-btn border px-10 mt-4 rounded-md text-[16px]"
+              >
                 copy<i class="fa-regular fa-copy"></i></button
               ><button
                 class="border border-green-200 rounded-md px-10 mt-4 bg-green-500 text-white text-[16px]"
